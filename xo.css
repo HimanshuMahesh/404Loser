@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.game-title {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0px 0px 5px #AC87C5;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    font-size: 1.2rem;
+    color: #AC87C5;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background: #6C5D99; /* Darker tone for the boxes */
+    border: 4px solid #AC87C5; /* Lavendar tone for borders */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #FCD5B5; /* Light Peach color for XO */
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    user-select: none;
+}
+
+.cell:hover {
+    background-color: #9875B2; /* Lighter tone for hover effect */
+}
+
+.winning-cell {
+    box-shadow: 0 0 15px 5px white; /* White glow for the winning line */
+}
+
+.game-over {
+    margin-top: 20px;
+    display: none;
+}
+
+#gameMessage {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0px 0px 5px #AC87C5;
+}
+
+#restartButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #AC87C5; /* Restart button color */
+    border: none;
+    color: #0d0d0d;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restartButton:hover {
+    background-color: #C2A0CE; /* Lighter shade for button hover */
+    color: #0d0d0d;
+}

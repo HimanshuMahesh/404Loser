@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Tic Tac Toe</title>
+    <link rel="stylesheet" href="xo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Link for Moserrart font -->
+    <link href="https://fonts.googleapis.com/css2?family=Moserrart:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">Retro Tic Tac Toe</h1>
+        <div class="scoreboard">
+            <div class="score">Player X: <span id="scoreX">0</span></div>
+            <div class="score">Player O: <span id="scoreO">0</span></div>
+        </div>
+        <div class="grid-container">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div class="game-over">
+            <h2 id="gameMessage"></h2>
+            <button id="restartButton">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="xo.js"></script>
+</body>
+</html>
