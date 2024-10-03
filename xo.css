@@ -90,3 +90,101 @@ body {
     background-color: #C2A0CE; /* Lighter shade for button hover */
     color: #0d0d0d;
 }
+/* For devices with a maximum width of 768px (Tablets) */
+@media (max-width: 768px) {
+    .game-title {
+        font-size: 2rem; /* Reduce font size */
+    }
+
+    .scoreboard {
+        flex-direction: column;
+        font-size: 1rem; /* Adjust scoreboard font size */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 100px); /* Make the cells smaller */
+    }
+
+    .cell {
+        font-size: 3rem; /* Scale down text inside the cells */
+        width: 100px;
+        height: 100px;
+    }
+
+    #gameMessage {
+        font-size: 1.2rem; /* Adjust game over message font size */
+    }
+
+    #restartButton {
+        padding: 8px 16px;
+        font-size: 1rem; /* Adjust button size */
+    }
+}
+
+/* For devices with a maximum width of 480px (Mobile Phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Reduce base font size */
+    }
+
+    .game-title {
+        font-size: 1.5rem; /* Reduce title font size */
+    }
+
+    .scoreboard {
+        font-size: 0.9rem; /* Adjust scoreboard font size */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 80px); /* Further reduce grid cell size */
+    }
+
+    .cell {
+        font-size: 2.5rem; /* Smaller font inside cells */
+        width: 80px;
+        height: 80px;
+    }
+
+    #gameMessage {
+        font-size: 1rem; /* Further adjust game over message font size */
+    }
+
+    #restartButton {
+        padding: 6px 14px;
+        font-size: 0.9rem; /* Smaller restart button */
+    }
+}
+
+/* For very small devices or portrait mode (e.g., older smartphones) */
+@media (max-width: 320px) {
+    body {
+        font-size: 12px; /* Further reduce font size */
+    }
+
+    .game-title {
+        font-size: 1.2rem; /* Smallest font size for very small screens */
+    }
+
+    .scoreboard {
+        font-size: 0.8rem; /* Make scoreboard font smaller */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 70px); /* Even smaller grid cells */
+    }
+
+    .cell {
+        font-size: 2rem; /* Small font for cells */
+        width: 70px;
+        height: 70px;
+    }
+
+    #gameMessage {
+        font-size: 0.9rem; /* Small game over message */
+    }
+
+    #restartButton {
+        padding: 5px 12px;
+        font-size: 0.8rem; /* Smallest button size */
+    }
+}
